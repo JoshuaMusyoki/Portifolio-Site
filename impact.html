@@ -1,37 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Joshua @Software Engineer</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Impact | Terry Muchiri</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Impact Page Styles */
+        .impact-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .impact-container h2 {
+            color: #0073e6;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        /* Grid Layout */
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        /* Individual Card */
+        .impact-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            text-align: left;
+        }
+
+        .impact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .impact-card img {
+            width: 100%;
+            border-radius: 8px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .impact-card h3 {
+            margin-top: 15px;
+            color: #0073e6;
+            font-size: 22px;
+        }
+
+        .impact-card p {
+            font-size: 16px;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .impact-card a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #0073e6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: white;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .impact-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-	 <header>
-        <h1>My Tech Impact</h1>
+
+    <header>
+        <h1>👨‍💻 Terry Muchiri</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="impact.html">My Tech Impact</a></li>
-                <li><a href="messages.html">Birthday Messages</a></li>
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="impact.html">💡 My Work</a></li>
+                <li><a href="contact.html">📩 Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section>
-            <h2>Innovations and Contributions</h2>
-            <p>Over the years, I've been dedicated to coding and innovation. Here are some of the key impacts I've made:</p>
-            <ul>
-            	<li>Speaking in Tech Community Events e.g Atlassian Community Nairobi as well as several Google Developer Student Club(GDSCs) Sessions</li>
-                <li>Developing a platform for remote learning that engages students globally.</li>
-                <li>Contributed to open-source projects that benefit the tech community.</li>
-                <li>Mentoring young developers, helping them kickstart their careers in tech.</li>
-                <li>Advocated for sustainable tech solutions aligned with the SDGs.</li>
-            </ul>
-        </section>
+        <div class="impact-container">
+            <h2>💡 My Tech Impact</h2>
+            <p>Here are some of the projects and contributions I've made in the tech ecosystem.</p>
+
+            <div class="impact-grid">
+                <!-- Card 1 -->
+                <div class="impact-card">
+                    <img src="./images/project1.jpg" alt="Project 1">
+                    <h3>🚀 AI-Powered Chatbot</h3>
+                    <p>Developed a chatbot using Python and NLP to enhance customer support automation.</p>
+                    <a href="#">🔗 Read More</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="impact-card">
+                    <img src="./images/project2.jpg" alt="Project 2">
+                    <h3>🌍 Open Source Contribution</h3>
+                    <p>Contributed to an open-source project that improves accessibility in web apps.</p>
+                    <a href="#">🔗 Read More</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="impact-card">
+                    <img src="./images/project3.jpg" alt="Project 3">
+                    <h3>📱 Mobile App for Education</h3>
+                    <p>Built an educational app using React Native to help students learn coding.</p>
+                    <a href="#">🔗 Read More</a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="impact-card">
+                    <img src="./images/project4.jpg" alt="Project 4">
+                    <h3>🔗 Blockchain-Based Voting System</h3>
+                    <p>Created a secure voting system on Ethereum to promote transparency in elections.</p>
+                    <a href="#">🔗 Read More</a>
+                </div>
+            </div>
+        </div>
     </main>
+
     <footer>
-        <p>&copy; 2024 Joshua Musyoki. All Rights Reserved.</p>
+        <p>📧 Email: <a href="mailto:terry@example.com" style="color: white;">terry@example.com</a></p>
+        <p class="socials">
+            🔗 Connect: 
+            <a href="http://www.linkedin.com/in/engineerteresa-muchiri43475" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/Tess-cloudy" target="_blank">GitHub</a>
+        </p>
+        <p>&copy; 2024 Terry Muchiri. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>

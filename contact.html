@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Terry Muchiri</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Contact Page Styles */
+        .contact-container {
+            max-width: 700px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        header {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #0073e6, #00c6ff);
+            color: white;
+            padding: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        header h1 {
+            flex: 1;
+            text-align: center;
+            margin: 0;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .contact-container h2 {
+            color: #0073e6;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        .contact-form button {
+            background: #0073e6;
+            color: white;
+            padding: 12px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #005bb5;
+        }
+
+        /* Social Links */
+        .socials {
+            margin-top: 20px;
+        }
+
+        .socials a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 20px;
+            color: #0073e6;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: white;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .socials a:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>👨‍💻 Terry Muchiri</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="impact.html">💡 My Work</a></li>
+                <li><a href="contact.html">📩 Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-container">
+            <h2>📩 Get in Touch</h2>
+            <p>Feel free to reach out for collaborations, questions, or just to say hello! 😊</p>
+
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="socials">
+                <p>🔗 Connect with me:</p>
+                <a href="https://linkedin.com/in/terry" target="_blank">LinkedIn</a>
+                <a href="https://github.com/terry" target="_blank">GitHub</a>
+                <a href="mailto:terry@example.com">📧 Email</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>📧 Email: <a href="mailto:terry@example.com" style="color: white;">terry@example.com</a></p>
+        <p class="socials">
+            🔗 Connect: 
+            <a href="http://www.linkedin.com/in/engineerteresa-muchiri43475" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/Tess-cloud" target="_blank">GitHub</a>
+        </p>
+        <p>&copy; 2024 Terry Muchiri. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
